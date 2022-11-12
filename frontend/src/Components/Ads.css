@@ -1,0 +1,25 @@
+.adimage{
+    height: 18rem;
+    object-fit: cover;
+}
+.adbody{
+    height: 18.5rem; 
+}
+
+.Adcard{
+    margin: 5px;
+    position: relative;
+}
+.adDes{
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; 
+           line-clamp: 2; 
+   -webkit-box-orient: vertical;
+}
+.adButton{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1rem;
+}

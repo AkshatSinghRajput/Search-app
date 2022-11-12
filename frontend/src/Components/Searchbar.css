@@ -1,0 +1,13 @@
+.searchbar{
+    display: flex;
+    width: 50%;
+    align-content: center;
+    margin-top: 15px;
+}
+.textHead{
+    font-weight: bold;
+}
+.span1{
+    margin-left: 15px;
+    color:rgb(113, 46, 46)
+}
