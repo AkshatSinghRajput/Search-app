@@ -1,30 +1,6 @@
 const router = require("express").Router();
 const Ads = require("../Models/Ads");
 const Company = require("../Models/Company");
-// router.get("/", async (req, res) => {
-//   try {
-//     let a = await Ads.aggregate([
-//       {
-//         $lookup: {
-//           from: "companies",
-//           localField: "companyId",
-//           foreignField: "id",
-//           as: "data",
-//         },
-//       },
-//       {
-//         $unwind: "$data",
-//       },
-//     ]);
-//     if (a.length === 0) {
-//       res.status(404).json({ success: false, error: "No Ads found" });
-//     } else {
-//       res.status(200).json({ success: true, data: a });
-//     }
-//   } catch (error) {
-//     res.status(500).json({ success: false, error: "Internal server error" });
-//   }
-// });
 
 router.post("/search", async (req, res) => {
   try {
