@@ -17,7 +17,7 @@ function Searchbar() {
       <div className="input-group container searchbar">
         <input
           type="search"
-          class="form-control rounded"
+          className="form-control rounded"
           placeholder="Search"
           aria-label="Search"
           aria-describedby="search-addon"
@@ -25,7 +25,6 @@ function Searchbar() {
           value={query}
           onChange={(e) => {
             setQuery(e.target.value);
-            console.log(query);
           }}
           required={true}
         />
@@ -34,7 +33,7 @@ function Searchbar() {
           className="btn btn-outline-primary"
           onClick={clicked}
         >
-          <i class="fas fa-search"></i>
+          <i className="fas fa-search"></i>
         </button>
       </div>
     </>
